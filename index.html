@@ -10,21 +10,27 @@
         <title>JianJun's Landing  Page</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <a class="navbar-brand" href="#">Jian's Landing Page</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="masthead"style="background-image: url('assets/background.jpg');">
+
+      <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">Logo Here</a>
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">About Me</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutMe">About Me</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Skills</a>
                 </li>
+        <!--Projects Dropdown-->
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" data-bs-target="#dropdown-menu" aria-haspopup="true" aria-expanded="false">
                     Projects
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -35,12 +41,25 @@
                 </li>
               </ul>
             </div>
-          </nav>
-        <div class="masthead"style="background-image: url('assets/background.jpg');">
-            <div 
-                class="color-overlay d-flex justify-content-center align-items-center" id="intro">
-                <h1>Hello World</h1>
             </div>
+          </nav>
+        <!--ShowCase-->
+
+        <section>
+          <div class="container" id="aboutMe">
+            <div class="row mt-5 pt-5">
+              <div class="col-6">
+                <img src="assets/placeholder.jpg" class="img-thumbnail img-responsive rounded p-0 border-0 " alt="Placeholder"/>
+              </div>
+            </div>
+            <div class="row align-items-end">
+              <div class="col-6">
+                <h1>About Me:</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto alias aliquam mollitia sed voluptates, est rerum dicta? Delectus repudiandae quaerat sit dolorum, mollitia voluptas, possimus libero est laborum exercitationem voluptates.</p>
+              </div>
+            </div>
+          </div>
+        </section>
             
         </div>
         
